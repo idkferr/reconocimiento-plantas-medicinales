@@ -1,10 +1,10 @@
-# 🌿 Reconocimiento de plantas medicinales con CNN
+# Reconocimiento de plantas medicinales con CNN
 
 Modelo de **deep learning** que clasifica fotos de hojas en **80 especies de plantas medicinales**, usando una red neuronal convolucional (CNN) construida desde cero con **PyTorch**.
 
 <a href="https://colab.research.google.com/github/idkferr/reconocimiento-plantas-medicinales/blob/main/plantas_medicinales_cnn.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Abrir en Colab"></a>
 
-## 📊 Dataset
+## Dataset
 
 [Indian Medicinal Leaves Dataset](https://www.kaggle.com/datasets/aryashah2k/indian-medicinal-leaves-dataset) (Kaggle): **6.900 imágenes** de hojas de 80 especies, como aloe vera, tulsi, neem, menta, cúrcuma, jengibre o eucalipto. El notebook lo descarga automáticamente con `kagglehub`.
 
@@ -23,7 +23,7 @@ Modelo de **deep learning** que clasifica fotos de hojas en **80 especies de pla
 
 </details>
 
-## 🧠 Modelo
+## Modelo
 
 ```
 Imagen 28×28 RGB
@@ -38,7 +38,7 @@ Imagen 28×28 RGB
 - **Optimizador:** Adam, tasa de aprendizaje 0,001
 - **Entrenamiento:** 10 épocas, lotes de 64 imágenes, en GPU si hay una disponible
 
-## 📈 Evaluación
+## Evaluación
 
 El notebook registra la pérdida y la exactitud de entrenamiento y validación en cada época, y las grafica. Sobre el conjunto de prueba calcula:
 
@@ -56,14 +56,14 @@ Resultados de la ejecución guardada en el notebook, que se detuvo en la época 
 
 El modelo sigue mejorando época a época. Con 80 clases, una clasificación al azar acertaría un 1,25 %.
 
-## 🔭 Mejoras posibles
+## Mejoras posibles
 
 - Usar imágenes más grandes que 28×28 (por ejemplo 128×128), porque a esa resolución se pierde la textura de la hoja
 - Aumentar los datos con rotaciones, volteos y cambios de brillo
 - *Transfer learning* con un modelo preentrenado (ResNet, EfficientNet)
 - Agregar *dropout* y *early stopping* para reducir el sobreajuste
 
-## 🚀 Cómo ejecutarlo
+## Cómo ejecutarlo
 
 Lo más simple es usar el botón **Abrir en Colab** de arriba y elegir un entorno con GPU.
 
@@ -78,6 +78,6 @@ jupyter notebook plantas_medicinales_cnn.ipynb
 
 `kagglehub` puede pedir que inicies sesión en Kaggle para descargar el dataset.
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 Python · PyTorch · torchvision · scikit-learn · matplotlib · Google Colab · KaggleHub
